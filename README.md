@@ -1,6 +1,7 @@
 # Mammogram predictive modelling
 
 Kyeongsoo Kim January 2018 ~ March 2018
+
 ## 1. Introduction
 Mammography is the most effective method for breast cancer screening 
 available today. However, the low positive predictive value of breast 
@@ -23,14 +24,9 @@ of a mammographic mass lesion from BI-RADS attributes and the patient's age. It 
 6. Severity: benign=0 or malignant=1 (binominal)
 ```
 
-
-
-BI-RADS is an assesment of how confident the severity classification is; it is not a "predictive" attribute and so we will discard it. The age, shape, margin, and density attributes are the features that we will build our model with, and "severity" is the classification we will attempt to predict based on those attributes.
-
-Although "shape" and "margin" are nominal data types, which sklearn typically doesn't deal with well, they are close enough to ordinal that we shouldn't just discard them. The "shape" for example is ordered increasingly from round to irregular.
-
 A lot of unnecessary anguish and surgery arises from false positives arising from mammogram results. If we can build a better way to interpret them through supervised machine learning, it could improve a lot of lives.
 
+> keras and graphviz should be installed to see the full result of the scripts.
 
 ## 2. Project Details
 I applied several different supervised machine learning techniques to this data set, and found the best model by checking which one yields the highest accuracy as measured with K-Fold cross validation (K=10). 
@@ -40,11 +36,11 @@ The machine learning techniques I applied are as follows:
 ```
 Decision tree
 Random forest
+SVM
 KNN
 Naive Bayes
-SVM
 Logistic Regression
-a neural network using Keras
+a neural network
 ```
 
 
