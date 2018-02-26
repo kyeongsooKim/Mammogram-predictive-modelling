@@ -1,6 +1,6 @@
 # Mammogram predictive modelling
 
-Kyeongsoo Kim January 2018 ~ March 2018
+Kyeongsoo Kim September 2017 ~ December 2017
 
 ## 1. Introduction
 Mammography is the most effective method for breast cancer screening 
